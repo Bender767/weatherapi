@@ -36,7 +36,6 @@ export const Call = (props) => {
   })
   }
 
-  
   /*
   .catch(error => {
     console.error(error);
