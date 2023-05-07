@@ -1,4 +1,5 @@
 import React from 'react'
+import  '../Styles/displayer.css'
 
 export const Displayer = (props) => {
 
@@ -57,25 +58,31 @@ console.log(newObject)
 
  
 /*   console.log(data.coord.lon) */
-/*  let newParsed = JSON.parse(data) */
-    
+/*  JSON.parse(data) */
+ let initVar = () => {
+     let lon = data["coord"]["lon"]
+     console.log(lon)
+    return lon
+ }
+
+
   return (
-    <>
-    <div>
-        <p></p>
-        <p>Place: {data.name} </p>
-        <p>Longitude: </p>
-        <p>Latitude: </p>
+    <div id='weatherdisplay'>
+        <div id='place'>
+            <p></p>
+            <p>Place: {data.name} </p>
+            <p>Longitude:</p>
+            <p>Latitude: </p>
+        </div>
+        <div id='temp'>
+            <p>Main Condition: </p>
+            <p>Temp Min:{/* {data.main.temp_min} */} </p>
+            <p>Temp Max: </p>
+        </div>
+        <div id='wind'>
+            <p>Windspeed: </p>
+            <p>Deg: </p>
+        </div>
     </div>
-    <div>
-        <p>Main Condition: </p>
-        <p>Temp Min:{/* {data.main.temp_min} */} </p>
-        <p>Temp Max: </p>
-    </div>
-    <div>
-        <p>Windspeed: </p>
-        <p>Deg: </p>
-    </div>
-    </>
   )
 }

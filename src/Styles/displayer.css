@@ -1,0 +1,24 @@
+#weatherdisplay{
+    font-size: 1.2rem;
+/*     background-color: rgba(119, 118, 118, 0.438); */
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+#place, #temp, #wind{
+    font-size: 1.2rem;
+    border: 1px;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom, rgba(88, 189, 248, 0.432), rgba(42, 80, 129, 0.493));
+    box-shadow: 10px 10px 15px rgba(59, 59, 59, 0.329);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+
+    

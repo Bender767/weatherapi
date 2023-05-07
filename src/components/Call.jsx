@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import {TK} from "./TK.js"
 
+import  '../Styles/call.css'
+
 
 /* https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=TK */
 
@@ -47,14 +49,14 @@ export const Call = (props) => {
 
   
   return (
-    <div>
+    <div id='inputweather'>
       <div>
         <input type="text" placeholder='Lon' onChange={updateLon}/>
         <input type="text" placeholder='Lat'onChange={updateLat}/>
       </div> 
-      <button onClick={apiGet}>Fetch Weather Data</button>
+      <button className='button' onClick={apiGet}>Fetch Weather Data</button>
       <br />
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <pre id='responsetest'>{JSON.stringify(data, null, 2)}</pre>
       <br />
     </div>
   );
