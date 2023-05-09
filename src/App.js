@@ -11,11 +11,14 @@ import './App.css';
 function App() {
 
 const [data, setData] = useState({})
+const [coords, setCoords] = useState(["",""])
 
   return (
     <div className="App">
-      <Call payload={[data, setData]}/>
-      <Displayer payload={[data, setData]}/>
+      <Call payload={[data, setData]} coords={[coords, setCoords]}/>
+      {data.main && (
+        <Displayer payload={[data, setData]} coords={[coords, setCoords]}/>
+      )}
     </div>
   );
 }

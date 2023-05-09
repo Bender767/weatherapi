@@ -10,7 +10,7 @@
     box-shadow: 10px 10px 15px rgba(59, 59, 59, 0.329);
     margin: 1rem;
     padding: 0.5rem;
-    display:flex;
+    /* display:flex; */
 }
 
 
@@ -18,7 +18,7 @@
   background-color: #0095ff;
   border: 1px solid transparent;
   border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, .4) 0 0 1px 1px inset;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -58,7 +58,16 @@
     display: block;
 }
 
+.inputfields{
+    padding: 10px;
+    margin: 10px;
+}
 
+
+.inputfields>*{
+    padding: 10px;
+    margin: 10px;
+}
 
 
 
