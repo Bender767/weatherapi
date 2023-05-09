@@ -13,17 +13,17 @@ export const Displayer = (props) => {
         <div id='place'>
             <p></p>
             <p>Place: {data.name} </p>
-            <p>Longitude:</p>
-            <p>Latitude: </p>
+            <p>Longitude: {data.coord.lon}</p>
+            <p>Latitude: {data.coord.lat}</p>
         </div>
         <div id='temp'>
-            <p>Main Condition: </p>
+            <p>Current Temp: {data.main.temp} °C</p>
             <p>Temp Min: {data.main.temp_min} °C</p>
             <p>Temp Max: {data.main.temp_max} °C</p> 
         </div>
         <div id='wind'>
-            <p>Windspeed: </p>
-            <p>Deg: </p>
+            <p>Windspeed: {data.wind.speed}</p>
+            <p>Direction: {data.wind.deg}°</p>
         </div>
     </div>
   )
